@@ -1,0 +1,3263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-4" style="min-width: 90%">
+      
+      <div class="accordion" id="accordionExample" style="width: 70%; margin: 2em auto;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              Instructions
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+            <p>
+                In this task, you will read a fictional story and for each person in the story, you
+                will judge their "character" in terms of eight character traits. 
+                </p>
+                <p>
+                In everyday life, we often describe people as "having character," or to a particular individual as being a person "of character." By this we mean that they have a commendable or admirable character. Alternatively, we sometimes refer to people as "lacking character," in which case we mean that their character is not commendable, and not admirable. Imagine that you are trying to figure out whether a person has an admirable character or not.
+            </p>
+            <p>
+                A person's character is described in terms of eight character traits and how much the person "lacks" or "possesses" each trait.
+                How much a person "lacks" or "possesses" a trait is chosen on a 7-point scale. For example, a person lacking honesty would be "dishonest", while a person having honesty be "honest." In case of ambiguity or lack of information in the story, middle value of the scale can be chosen.
+
+                <div style="display: flex; flex-direction: column; width: 75%; margin: 1em auto;">
+                    
+                    <div
+                        style="
+                        display: inline-flex;
+                        flex-direction: row;
+                        text-align: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        margin: 0.5em 0;
+                        "
+                    >
+                      <b style="width: 13em">dishonest</b>
+                      <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.2em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                        <input
+                          type="radio"
+                          name="|honest"
+                          value="1"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|honest"
+                          value="2"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|honest"
+                          value="3"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|honest"
+                          value="4"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|honest"
+                          value="5"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|honest"
+                          value="6"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|honest"
+                          value="7"
+                          disabled
+                        />
+                      </div>
+                      <b style="width: 13em">honest</b>
+                    </div>
+                    
+                    <div
+                        style="
+                        display: inline-flex;
+                        flex-direction: row;
+                        text-align: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        margin: 0.5em 0;
+                        "
+                    >
+                      <b style="width: 13em">unfair</b>
+                      <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.2em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                        <input
+                          type="radio"
+                          name="|fair"
+                          value="1"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|fair"
+                          value="2"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|fair"
+                          value="3"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|fair"
+                          value="4"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|fair"
+                          value="5"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|fair"
+                          value="6"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|fair"
+                          value="7"
+                          disabled
+                        />
+                      </div>
+                      <b style="width: 13em">fair</b>
+                    </div>
+                    
+                    <div
+                        style="
+                        display: inline-flex;
+                        flex-direction: row;
+                        text-align: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        margin: 0.5em 0;
+                        "
+                    >
+                      <b style="width: 13em">cowardly</b>
+                      <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.2em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                        <input
+                          type="radio"
+                          name="|courageous"
+                          value="1"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|courageous"
+                          value="2"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|courageous"
+                          value="3"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|courageous"
+                          value="4"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|courageous"
+                          value="5"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|courageous"
+                          value="6"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|courageous"
+                          value="7"
+                          disabled
+                        />
+                      </div>
+                      <b style="width: 13em">courageous</b>
+                    </div>
+                    
+                    <div
+                        style="
+                        display: inline-flex;
+                        flex-direction: row;
+                        text-align: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        margin: 0.5em 0;
+                        "
+                    >
+                      <b style="width: 13em">arrogant</b>
+                      <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.2em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                        <input
+                          type="radio"
+                          name="|humble"
+                          value="1"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|humble"
+                          value="2"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|humble"
+                          value="3"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|humble"
+                          value="4"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|humble"
+                          value="5"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|humble"
+                          value="6"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|humble"
+                          value="7"
+                          disabled
+                        />
+                      </div>
+                      <b style="width: 13em">humble</b>
+                    </div>
+                    
+                    <div
+                        style="
+                        display: inline-flex;
+                        flex-direction: row;
+                        text-align: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        margin: 0.5em 0;
+                        "
+                    >
+                      <b style="width: 13em">disrespectful</b>
+                      <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.2em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                        <input
+                          type="radio"
+                          name="|respectful"
+                          value="1"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|respectful"
+                          value="2"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|respectful"
+                          value="3"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|respectful"
+                          value="4"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|respectful"
+                          value="5"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|respectful"
+                          value="6"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|respectful"
+                          value="7"
+                          disabled
+                        />
+                      </div>
+                      <b style="width: 13em">respectful</b>
+                    </div>
+                    
+                    <div
+                        style="
+                        display: inline-flex;
+                        flex-direction: row;
+                        text-align: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        margin: 0.5em 0;
+                        "
+                    >
+                      <b style="width: 13em">cruel</b>
+                      <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.2em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                        <input
+                          type="radio"
+                          name="|compassionate"
+                          value="1"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|compassionate"
+                          value="2"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|compassionate"
+                          value="3"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|compassionate"
+                          value="4"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|compassionate"
+                          value="5"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|compassionate"
+                          value="6"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|compassionate"
+                          value="7"
+                          disabled
+                        />
+                      </div>
+                      <b style="width: 13em">compassionate</b>
+                    </div>
+                    
+                    <div
+                        style="
+                        display: inline-flex;
+                        flex-direction: row;
+                        text-align: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        margin: 0.5em 0;
+                        "
+                    >
+                      <b style="width: 13em">unprincipled</b>
+                      <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.2em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                        <input
+                          type="radio"
+                          name="|principled"
+                          value="1"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|principled"
+                          value="2"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|principled"
+                          value="3"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|principled"
+                          value="4"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|principled"
+                          value="5"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|principled"
+                          value="6"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|principled"
+                          value="7"
+                          disabled
+                        />
+                      </div>
+                      <b style="width: 13em">principled</b>
+                    </div>
+                    
+                    <div
+                        style="
+                        display: inline-flex;
+                        flex-direction: row;
+                        text-align: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        margin: 0.5em 0;
+                        "
+                    >
+                      <b style="width: 13em">irresponsible</b>
+                      <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.2em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                        <input
+                          type="radio"
+                          name="|responsible"
+                          value="1"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|responsible"
+                          value="2"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|responsible"
+                          value="3"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|responsible"
+                          value="4"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|responsible"
+                          value="5"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|responsible"
+                          value="6"
+                          disabled
+                        />
+                        <input
+                          type="radio"
+                          name="|responsible"
+                          value="7"
+                          disabled
+                        />
+                      </div>
+                      <b style="width: 13em">responsible</b>
+                    </div>
+                    
+                  </div>
+            </p>
+
+            <h4>Task</h4>
+            <p>
+                <ul>
+                    <li>Read the full story shown on the left below.</li>
+                    <li>On the right side below, for each person mentioned in the story, select 
+                        how much a trait applies to that person.</li>
+                    <li> Judge each person's character taking the whole story into account and not some part of the story.</li>
+                    <li>You should think about how useful the information in the story would be in telling you whether the person has an admirable character or not.</li>
+                </ul>
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="padding-bottom: 3em">
+        <div class="col" style="margin-right: 2em; font-size: 1.1rem">
+          <pre style="white-space: pre-wrap; font-family: Georgia, serif">
+Polly Parrish is a salesgirl at the department store John B. Merlin and Son in New York City. Hired as temporary help for the Christmas season, she receives her dismissal notice as the season comes to a close. On her way home, she sees a stranger leaving a baby on the steps of an orphanage. Fearing exposure to the cold will harm the baby, Polly fails to catch the mother and takes it inside. An attendant mistakenly believes that Polly is the baby&#39;s mother, and insists she keep it or be reported to the authorities.
+
+David Merlin, the playboy son of the store&#39;s owner J.B. Merlin, is sympathetic to the &#34;unwed mother&#34; and arranges for her to get her job back. Mrs. Weiss, Polly&#39;s landlady, offers to take care of the boy when Polly is at work. Unable to convince anyone that she is not the mother, and threatened by David with loss of her job if she doesn&#39;t assume that role, Polly gives up and starts raising the child.
+
+David&#39;s involvement with Polly gradually turns into love, but he keeps the relationship a secret from his father, fearing his reaction. When he finds that New Year&#39;s Eve has arrived and he has no date, David turns to Polly. He orders clothes to be sent from the store and takes her to a party. Although David is falling for Polly, he does not relish the idea of a &#34;ready-made family&#34;.
+
+When J.B. learns about the child, he assumes that David is the father. His suspicions are reinforced when, in a bit of bad timing, Polly and David each produce a different man whom they claim is the father. To his son&#39;s surprise, J.B. is delighted (he had been impatiently waiting for David to settle down and provide him with a grandson). In the end, David decides that he is in love with Polly and baby John. He tells his father that he is the father of the child and plans to marry Polly, all the while believing Polly is the child&#39;s mother.</pre
+          >
+        </div>
+        <div class="col" style="font-size: 0.8rem">
+          <form action="/test1" method="POST">
+            <input type="hidden" name="id" value="79848" />
+            <div style="overflow-y: scroll; height: 45em">
+              
+              <div style="margin-top: 2em; margin-right: 1em">
+                <div
+                  style="
+                    position: sticky;
+                    top: 0;
+                    width: 100%;
+                    background-color: rgb(172, 237, 229);
+                    padding: 0.5em 0.5em 0.5em 1em;
+                    border-radius: 3px;
+                  "
+                >
+                  <b>Polly</b>
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">dishonest</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Polly|honest"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|honest"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|honest"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|honest"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|honest"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|honest"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|honest"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">honest</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">unfair</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Polly|fair"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|fair"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|fair"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|fair"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|fair"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|fair"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|fair"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">fair</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">cowardly</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Polly|courageous"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|courageous"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|courageous"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|courageous"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|courageous"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|courageous"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|courageous"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">courageous</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">arrogant</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Polly|humble"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|humble"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|humble"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|humble"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|humble"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|humble"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|humble"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">humble</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">disrespectful</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Polly|respectful"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|respectful"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|respectful"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|respectful"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|respectful"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|respectful"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|respectful"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">respectful</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">cruel</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Polly|compassionate"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|compassionate"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|compassionate"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|compassionate"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|compassionate"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|compassionate"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|compassionate"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">compassionate</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">unprincipled</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Polly|principled"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|principled"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|principled"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|principled"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|principled"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|principled"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|principled"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">principled</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">irresponsible</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Polly|responsible"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|responsible"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|responsible"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|responsible"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|responsible"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|responsible"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Polly|responsible"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">responsible</b>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div style="margin-top: 2em; margin-right: 1em">
+                <div
+                  style="
+                    position: sticky;
+                    top: 0;
+                    width: 100%;
+                    background-color: rgb(172, 237, 229);
+                    padding: 0.5em 0.5em 0.5em 1em;
+                    border-radius: 3px;
+                  "
+                >
+                  <b>David</b>
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">dishonest</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="David|honest"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|honest"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|honest"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|honest"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|honest"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|honest"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|honest"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">honest</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">unfair</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="David|fair"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|fair"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|fair"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|fair"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|fair"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|fair"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|fair"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">fair</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">cowardly</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="David|courageous"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|courageous"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|courageous"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|courageous"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|courageous"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|courageous"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|courageous"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">courageous</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">arrogant</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="David|humble"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|humble"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|humble"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|humble"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|humble"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|humble"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|humble"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">humble</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">disrespectful</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="David|respectful"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|respectful"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|respectful"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|respectful"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|respectful"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|respectful"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|respectful"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">respectful</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">cruel</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="David|compassionate"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|compassionate"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|compassionate"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|compassionate"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|compassionate"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|compassionate"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|compassionate"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">compassionate</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">unprincipled</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="David|principled"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|principled"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|principled"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|principled"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|principled"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|principled"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|principled"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">principled</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">irresponsible</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="David|responsible"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|responsible"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|responsible"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|responsible"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|responsible"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|responsible"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="David|responsible"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">responsible</b>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div style="margin-top: 2em; margin-right: 1em">
+                <div
+                  style="
+                    position: sticky;
+                    top: 0;
+                    width: 100%;
+                    background-color: rgb(172, 237, 229);
+                    padding: 0.5em 0.5em 0.5em 1em;
+                    border-radius: 3px;
+                  "
+                >
+                  <b>Mrs. Weiss</b>
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">dishonest</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|honest"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|honest"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|honest"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|honest"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|honest"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|honest"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|honest"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">honest</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">unfair</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|fair"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|fair"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|fair"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|fair"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|fair"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|fair"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|fair"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">fair</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">cowardly</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|courageous"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|courageous"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|courageous"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|courageous"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|courageous"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|courageous"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|courageous"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">courageous</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">arrogant</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|humble"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|humble"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|humble"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|humble"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|humble"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|humble"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|humble"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">humble</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">disrespectful</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|respectful"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|respectful"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|respectful"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|respectful"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|respectful"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|respectful"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|respectful"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">respectful</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">cruel</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|compassionate"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|compassionate"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|compassionate"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|compassionate"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|compassionate"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|compassionate"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|compassionate"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">compassionate</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">unprincipled</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|principled"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|principled"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|principled"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|principled"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|principled"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|principled"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|principled"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">principled</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">irresponsible</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|responsible"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|responsible"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|responsible"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|responsible"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|responsible"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|responsible"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="Mrs. Weiss|responsible"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">responsible</b>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div style="margin-top: 2em; margin-right: 1em">
+                <div
+                  style="
+                    position: sticky;
+                    top: 0;
+                    width: 100%;
+                    background-color: rgb(172, 237, 229);
+                    padding: 0.5em 0.5em 0.5em 1em;
+                    border-radius: 3px;
+                  "
+                >
+                  <b>J.B. Merlin</b>
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">dishonest</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|honest"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|honest"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|honest"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|honest"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|honest"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|honest"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|honest"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">honest</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">unfair</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|fair"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|fair"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|fair"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|fair"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|fair"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|fair"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|fair"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">fair</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">cowardly</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|courageous"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|courageous"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|courageous"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|courageous"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|courageous"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|courageous"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|courageous"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">courageous</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">arrogant</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|humble"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|humble"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|humble"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|humble"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|humble"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|humble"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|humble"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">humble</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">disrespectful</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|respectful"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|respectful"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|respectful"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|respectful"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|respectful"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|respectful"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|respectful"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">respectful</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">cruel</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|compassionate"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|compassionate"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|compassionate"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|compassionate"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|compassionate"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|compassionate"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|compassionate"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">compassionate</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">unprincipled</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|principled"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|principled"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|principled"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|principled"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|principled"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|principled"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|principled"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">principled</b>
+                  </div>
+                  
+                  <div
+                    style="
+                      display: inline-flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: space-between;
+                      width: 100%;
+                      align-items: center;
+                      margin: 1.5em 0 1.5em 0;
+                    "
+                  >
+                    <b style="width: 12em">irresponsible</b>
+                    <div
+                      style="
+                        background: linear-gradient(
+                          to left,
+                          #4bd73c 0%,
+                          #a3a3a3 50%,
+                          #f34444 100%
+                        );
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 1.5em;
+                        border-radius: 3px;
+                        padding: 0.5em 0.25em 0.5em 0.25em;
+                        margin: 0;
+                      "
+                    >
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|responsible"
+                        value="1"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|responsible"
+                        value="2"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|responsible"
+                        value="3"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|responsible"
+                        value="4"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|responsible"
+                        value="5"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|responsible"
+                        value="6"
+                        required
+                      />
+                      <input
+                        type="radio"
+                        name="J.B. Merlin|responsible"
+                        value="7"
+                        required
+                      />
+                    </div>
+                    <b style="width: 13em">responsible</b>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <input
+                type="submit"
+                value="Submit"
+                style="background-color: #cfe2ff; margin-top: 2em"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
